@@ -67,33 +67,13 @@ export default function BubbleSortVisualizer() {
 
   return (
     <div className="space-y-6 p-4 text-white">
-      <button
-        onClick={() => navigate("/")}
-        className="bg-gray-600 text-white px-4 py-2 rounded hover:bg-gray-700 transition"
-      >
-        ← Back
-      </button>
-
+      <button onClick={() => navigate("/")} className="bg-gray-600 text-white px-4 py-2 rounded hover:bg-gray-700 transition">← Back</button>
       <h2 className="text-2xl font-semibold">Bubble Sort Visualizer</h2>
-
       <div className="flex items-center gap-4">
-        <input
-          type="number"
-          value={newValue}
-          onChange={(e) => setNewValue(e.target.value)}
-          className="border p-4 rounded-2xl w-45"
-          placeholder="New number"
-        />
-        <button
-          onClick={handleAddValue}
-          className="bg-green-600 text-white p-4 rounded-2xl hover:bg-green-700 transition"
-        >
-          Add Value
-        </button>
+        <input type="number" value={newValue} onChange={(e) => setNewValue(e.target.value)} className="border p-4 rounded-2xl w-45" placeholder="New number" />
+        <button onClick={handleAddValue} className="bg-green-600 text-white p-4 rounded-2xl hover:bg-green-700 transition">Add Value</button>
       </div>
-
       <p className="text-emerald-200">Iteration: {iteration}</p>
-
       <div className="flex gap-2 items-end h-40">
         {array.map((num, idx) => (
           <div key={idx} className="flex flex-col items-center">

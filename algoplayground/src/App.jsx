@@ -17,16 +17,12 @@ export default function App() {
       <div className="min-h-screen bg-neutral-900 p-8 pt-4">
         <h1 className="text-5xl text-white font-bold mb-8 text-center">AlgoPlayground</h1>
         <Routes>
-          <Route
-            path="/"
+          <Route 
+            path="/" 
             element={
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 h-[80vh]">
                 {problems.map((p) => (
-                  <Link
-                    key={p.id}
-                    to={`/${p.id}`}
-                    className="p-6 text-white bg-neutral-600 rounded-2xl shadow-md shadow-neutral-600 hover:bg-neutral-800 hover:shadow-xl transition cursor-pointer"
-                  >
+                  <Link key={p.id} to={`/${p.id}`} className="p-6 text-white bg-neutral-600 rounded-2xl shadow-md shadow-neutral-600 hover:bg-neutral-800 hover:shadow-xl transition cursor-pointer">
                     <h2 className="text-3xl font-bold">{p.name}</h2>
                     <p className=" mt-2">{p.description}</p>
                   </Link>
