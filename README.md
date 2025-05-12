@@ -30,12 +30,13 @@ Make sure you have the following installed:
 - **Node.js** (v14+)
 - **npm** or **yarn**
 
-### 1. Clone the Repository
+### Clone the Repository
 
 ```bash
 git clone https://github.com/rafimoz/AlgoPlayground.git
 cd algoplayground
 
+### Run Application
 
 ```node
 npm install
