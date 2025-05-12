@@ -20,8 +20,7 @@ A dynamic React-based **algorithm visualizer** for learning and exploring popula
 
 > 🚧 Add a GIF or image of your app running here!
 
-<img src="https://asset.cloudinary.com/dhlh7av5k/561aea00317bd8275b3965052e42b1ca" />
-
+![Demo GIF](https://res.cloudinary.com/demo/image/upload/v1710000000/algorithm-demo.gif)
 ---
 
 ## 🚀 Getting Started
