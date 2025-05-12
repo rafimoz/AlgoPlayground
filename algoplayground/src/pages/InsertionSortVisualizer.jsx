@@ -80,7 +80,7 @@ export default function InsertionSortVisualizer() {
   };
 
   return (
-    <div className="space-y-6 p-4">
+    <div className="space-y-8 p-4 text-white">
       <button
         onClick={() => navigate('/')}
         className="bg-gray-600 text-white px-4 py-2 rounded hover:bg-gray-700 transition"
@@ -95,20 +95,20 @@ export default function InsertionSortVisualizer() {
           type="number"
           value={newValue}
           onChange={(e) => setNewValue(e.target.value)}
-          className="border p-2 rounded w-32"
+          className="border p-4 rounded-2xl w-45"
           placeholder="New number"
         />
         <button
           onClick={handleAddValue}
-          className="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition"
+          className="bg-green-600 text-white p-4 rounded-2xl hover:bg-green-700 transition"
         >
           Add Value
         </button>
       </div>
 
-      <p className="text-gray-700">Iteration: {iteration}</p>
-      <p className="text-gray-700">Current Key: {key !== null ? key : 'N/A'}</p>
-      <p className="text-gray-700">i: {i}, j: {j}</p>
+      <p className="text-gray-400">Iteration: {iteration}</p>
+      <p className="text-gray-400">Current Key: {key !== null ? key : 'N/A'}</p>
+      <p className="text-gray-400">i: {i}, j: {j}</p>
 
       <div className="flex gap-2 items-end h-40">
         {array.map((num, idx) => (
@@ -117,7 +117,7 @@ export default function InsertionSortVisualizer() {
               type="number"
               value={num}
               onChange={(e) => handleValueChange(idx, e.target.value)}
-              className="mb-1 w-12 text-center border rounded"
+              className="mb-1 w-12 text-center rounded border-[0.5px] border-neutral-400 text-neutral-400"
             />
             <div
               className={`transition-all duration-500 ease-in-out w-12 text-white text-sm rounded-md flex items-end justify-center ${getBarColor(idx)}`}
@@ -132,7 +132,7 @@ export default function InsertionSortVisualizer() {
       <button
         onClick={nextStep}
         disabled={isSorted}
-        className={`text-white px-4 py-2 rounded transition ${isSorted
+        className={`text-white px-4 py-2 rounded-2xl transition ${isSorted
           ? "bg-gray-400 cursor-not-allowed"
           : "bg-purple-600 hover:bg-purple-700"
         }`}

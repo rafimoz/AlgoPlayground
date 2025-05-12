@@ -50,7 +50,7 @@ export default function TwoSumVisualizer() {
   };
 
   return (
-    <div className="space-y-6 p-4">
+    <div className="space-y-8 p-4 text-white">
       <button
         onClick={() => navigate("/")}
         className="bg-gray-600 text-white px-4 py-2 rounded hover:bg-gray-700 transition"
@@ -65,28 +65,28 @@ export default function TwoSumVisualizer() {
           type="number"
           value={newValue}
           onChange={(e) => setNewValue(e.target.value)}
-          className="border p-2 rounded w-32"
+          className="border p-4 rounded-2xl w-45"
           placeholder="New number"
         />
         <button
           onClick={handleAddValue}
-          className="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition"
+          className="bg-green-600 text-white p-4 rounded-2xl hover:bg-green-700 transition"
         >
           Add Value
         </button>
       </div>
 
       <div className="flex items-center gap-4">
-        <label className="text-gray-700 font-medium">Target:</label>
+        <label className="text-gray-400 font-medium">Target:</label>
         <input
           type="number"
           value={target}
           onChange={(e) => handleTargetChange(e.target.value)}
-          className="border p-2 rounded w-32"
+          className="border p-2 rounded-2xl w-32"
         />
       </div>
 
-      <p className="text-gray-700">Iterations: {iteration}</p>
+      <p className="text-gray-400">Iterations: {iteration}</p>
 
       <div className="flex gap-2 items-end">
         {array.map((num, idx) => (
@@ -95,10 +95,10 @@ export default function TwoSumVisualizer() {
               type="number"
               value={num}
               onChange={(e) => handleValueChange(idx, e.target.value)}
-              className="mb-1 w-12 text-center border rounded"
+              className="mb-1 w-12 text-center border-[0.5px] border-gray-400 rounded"
             />
             <div
-              className={`transition-all duration-300 ease-in-out w-12 text-white text-sm rounded-md p-2 text-center ${
+              className={`transition-all duration-300 ease-in-out w-12 text-white text-sm rounded-md p-3 text-center ${
                 result && result.includes(idx)
                   ? "bg-blue-600 scale-110"
                   : "bg-blue-400"

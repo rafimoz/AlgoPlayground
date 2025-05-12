@@ -20,11 +20,11 @@ export default function App() {
           <Route 
             path="/" 
             element={
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 h-[80vh]">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {problems.map((p) => (
                   <Link key={p.id} to={`/${p.id}`} className="p-6 text-white bg-neutral-600 rounded-2xl shadow-md shadow-neutral-600 hover:bg-neutral-800 hover:shadow-xl transition cursor-pointer">
-                    <h2 className="text-3xl font-bold">{p.name}</h2>
-                    <p className=" mt-2">{p.description}</p>
+                    <h2 className="md:text-3xl text-2xl font-bold">{p.name}</h2>
+                    <p className="md:text-xl text-sm mt-2">{p.description}</p>
                   </Link>
                 ))}
               </div>

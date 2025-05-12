@@ -66,7 +66,7 @@ export default function BubbleSortVisualizer() {
   };
 
   return (
-    <div className="space-y-6 p-4 text-white">
+    <div className="space-y-8 p-4 text-white">
       <button onClick={() => navigate("/")} className="bg-gray-600 text-white px-4 py-2 rounded hover:bg-gray-700 transition">← Back</button>
       <h2 className="text-2xl font-semibold">Bubble Sort Visualizer</h2>
       <div className="flex items-center gap-4">
