@@ -35,5 +35,8 @@ Make sure you have the following installed:
 ```bash
 git clone https://github.com/rafimoz/AlgoPlayground.git
 cd algoplayground
+
+
+```node
 npm install
 npm run dev
