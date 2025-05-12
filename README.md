@@ -16,7 +16,9 @@ A dynamic React-based **algorithm visualizer** for learning and exploring popula
 
 ---
 
-## ![📸 Demo GIF](https://res.cloudinary.com/dhlh7av5k/image/upload/v1747041730/1747041549998-ezgif.com-video-to-gif-converter_cwwnty.gif)
+## 📸 Demo 
+
+![Demo GIF](https://res.cloudinary.com/dhlh7av5k/image/upload/v1747041730/1747041549998-ezgif.com-video-to-gif-converter_cwwnty.gif)
 ---
 
 ## 🚀 Getting Started
