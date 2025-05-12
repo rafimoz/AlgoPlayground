@@ -33,5 +33,5 @@ Make sure you have the following installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/algorithm-visualizer.git
-cd algorithm-visualizer
+git clone https://github.com/rafimoz/AlgoPlayground.git
+cd algo
